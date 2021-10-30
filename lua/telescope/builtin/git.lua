@@ -367,7 +367,7 @@ local function apply_checks(mod)
     mod[k] = function(opts)
       opts = vim.F.if_nil(opts, {})
 
-      set_opts_cwd(opts)
+      -- set_opts_cwd(opts)
       v(opts)
     end
   end
